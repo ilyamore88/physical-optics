@@ -47,6 +47,10 @@ export default class Navigation extends Vue {
   flex: 1;
   margin: 0;
 
+  &__item {
+    margin-bottom: 3px;
+  }
+
   &__link {
     display: block;
     text-decoration: none;
@@ -58,6 +62,11 @@ export default class Navigation extends Vue {
 
     &:hover {
       background: #c8c8c8;
+    }
+
+    &:active {
+      position: relative;
+      top: 1px;
     }
 
     &--disabled {
