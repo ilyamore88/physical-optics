@@ -72,7 +72,7 @@ export default class Week1 extends Vue {
    * Get answer for task 1
    */
   private task1(): void {
-    this.task1Answer = (2.1 * Math.pow(10, 6)) / this.$refs.task1_1.value;
+    this.task1Answer = (2.1 * Math.pow(10, 6)) / +(this.$refs.task1_1 as HTMLInputElement).value;
   }
 }
 </script>

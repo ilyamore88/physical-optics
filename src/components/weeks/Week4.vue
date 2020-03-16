@@ -81,7 +81,7 @@ export default class Week4 extends Vue {
    * Get answer for task 1
    */
   private task1(): void {
-    const m: number = +this.$refs.task1_1.value;
+    const m: number = +(this.$refs.task1_1 as HTMLInputElement).value;
 
     this.task1Answer = 91.36 * (Math.pow(m + 1, 2) / (m * (m + 2)));
   }
@@ -90,8 +90,8 @@ export default class Week4 extends Vue {
    * Get answer for task 2
    */
   private task2(): void {
-    const n: number = +this.$refs.task2_1.value;
-    const N: number = +this.$refs.task2_2.value;
+    const n: number = +(this.$refs.task2_1 as HTMLInputElement).value;
+    const N: number = +(this.$refs.task2_2 as HTMLInputElement).value;
 
     this.task2Answer = Math.trunc(Math.pow((n - Math.pow(2.32 / 2.4, 2 * N)) / (n + Math.pow(2.32 / 2.4, 2 * N)), 2) * 100);
   }
