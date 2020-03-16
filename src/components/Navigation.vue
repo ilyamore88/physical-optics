@@ -6,9 +6,9 @@
       </span>
     </li>
     <li class="nav__item">
-      <span class="nav__link nav__link--disabled">
+      <router-link :to="{ name: 'Week2' }" :active-class="'nav__link--active'" class="nav__link">
         Неделя 2
-      </span>
+      </router-link>
     </li>
     <li class="nav__item">
       <span class="nav__link nav__link--disabled">
@@ -80,6 +80,10 @@ export default class Navigation extends Vue {
     &--active {
       background-color: #c8c8c8;
       cursor: default;
+
+      &:active {
+        top: 0px;
+      }
     }
   }
 }
