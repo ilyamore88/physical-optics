@@ -156,9 +156,9 @@ import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 /**
- * Class represents component for fourth week
+ * Class represents component for second week
  */
-export default class Week4 extends Vue {
+export default class Week2 extends Vue {
   private task1Answer: number | null = null;
   private task2Answer: number | null = null;
   private task3Answer: string | null = null;
