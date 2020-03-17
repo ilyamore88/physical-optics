@@ -254,8 +254,8 @@ export default class Week3 extends Vue {
     const sina: number = Math.sin(a);
     const cosa: number = Math.cos(a);
 
-    this.task4Answer = 0.5 * (Math.pow((nsqr * cosa - Math.sqrt(nsqr - Math.pow(sina, 2))) / (nsqr * cosa + Math.sqrt(nsqr - Math.pow(sina, 2))), 2) +
-        Math.pow((Math.sqrt(nsqr - Math.pow(sina, 2)) - cosa) / (Math.sqrt(nsqr - Math.pow(sina, 2)) + cosa), 2));
+    this.task4Answer = (0.5 * (Math.pow((nsqr * cosa - Math.sqrt(nsqr - Math.pow(sina, 2))) / (nsqr * cosa + Math.sqrt(nsqr - Math.pow(sina, 2))), 2) +
+        Math.pow((Math.sqrt(nsqr - Math.pow(sina, 2)) - cosa) / (Math.sqrt(nsqr - Math.pow(sina, 2)) + cosa), 2))).toFixed(3);
   }
 
   /**
@@ -267,7 +267,7 @@ export default class Week3 extends Vue {
     const a: number = +(this.$refs.task5_3 as HTMLInputElement).value;
     const m: number = +(this.$refs.task5_4 as HTMLInputElement).value;
 
-    this.task5Answer = l * Math.log(m) * Math.pow(2 * Math.PI * Math.sqrt(Math.pow(n * Math.sin(a), 2) - 1), -1);
+    this.task5Answer = (l * Math.log(m) * Math.pow(2 * Math.PI * Math.sqrt(Math.pow(n * Math.sin(a), 2) - 1), -1)).toFixed(2);
   }
 }
 </script>
