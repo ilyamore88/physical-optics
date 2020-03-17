@@ -11,9 +11,9 @@
       </router-link>
     </li>
     <li class="nav__item">
-      <span class="nav__link nav__link--disabled">
+      <router-link :to="{ name: 'Week3' }" :active-class="'nav__link--active'" class="nav__link">
         Неделя 3
-      </span>
+      </router-link>
     </li>
     <li class="nav__item">
       <router-link :to="{ name: 'Week4' }" :active-class="'nav__link--active'" class="nav__link">
