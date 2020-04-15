@@ -21,6 +21,16 @@
       </router-link>
     </li>
     <li class="nav__item">
+      <span class="nav__link nav__link--disabled">
+        Неделя 6
+      </span>
+    </li>
+    <li class="nav__item">
+      <router-link :to="{ name: 'Week7' }" :active-class="'nav__link--active'" class="nav__link">
+        Неделя 7
+      </router-link>
+    </li>
+    <li class="nav__item">
       <router-link :to="{ name: 'Hello' }" class="nav__link">
         На главную
       </router-link>
@@ -74,6 +84,10 @@ export default class Navigation extends Vue {
 
       &:hover {
         background: #ffffff;
+      }
+
+      &:active {
+        top: 0px;
       }
     }
 
