@@ -97,60 +97,25 @@
         </ul>
       </form>
     </div>
-<!--    <div class="task">-->
-<!--      <h3 class="task__header">Задание 3</h3>-->
-<!--      <p class="task__content">-->
-<!--        Простейшая дифракционная решетка, представляющая собой поглощающий экран с периодически расположенными (шаг Λ)-->
-<!--        прозрачными щелями шириной D, освещается нормально падающей плоской монохроматической волной-->
-<!--        (длина волны излучения <img class="task__formula" src="https://chart.googleapis.com/chart?cht=tx&amp;chl=\lambda">).-->
-<!--        Во сколько раз различаются интенсивности света, дифрагируемого решеткой в главные максимумы с номерами M<sub>1</sub> и M<sub>2</sub>?-->
-<!--      </p>-->
-<!--      <form class="task__form" @submit.prevent="task3">-->
-<!--        <ul class="input__list">-->
-<!--          <li class="input__item">-->
-<!--            <label for="task3.1" class="task__label">-->
-<!--              Введите шаг Λ:-->
-<!--            </label>-->
-<!--            <br>-->
-<!--            <input type="number" class="task__input" id="task3.1" required ref="task3_1" step="0.000001">-->
-<!--          </li>-->
-<!--          <li class="input__item">-->
-<!--            <label for="task3.2" class="task__label">-->
-<!--              Введите ширину D:-->
-<!--            </label>-->
-<!--            <br>-->
-<!--            <input type="number" class="task__input" id="task3.2" required ref="task3_2" step="0.01">-->
-<!--          </li>-->
-<!--          <li class="input__item">-->
-<!--            <label for="task3.3" class="task__label">-->
-<!--              Введите длину волны λ:-->
-<!--            </label>-->
-<!--            <br>-->
-<!--            <input type="number" class="task__input" id="task3.3" required ref="task3_3">-->
-<!--          </li>-->
-<!--          <li class="input__item">-->
-<!--            <label for="task3.4" class="task__label">-->
-<!--              Введите номер M<sub>1</sub>:-->
-<!--            </label>-->
-<!--            <br>-->
-<!--            <input type="number" class="task__input" id="task3.4" required ref="task3_4">-->
-<!--          </li>-->
-<!--          <li class="input__item">-->
-<!--            <label for="task3.5" class="task__label">-->
-<!--              Введите номер M<sub>2</sub>:-->
-<!--            </label>-->
-<!--            <br>-->
-<!--            <input type="number" class="task__input" id="task3.5" required ref="task3_5">-->
-<!--          </li>-->
-<!--          <li class="input__item">-->
-<!--            <button class="task__button" type="submit">Посчитать</button>-->
-<!--            <span class="task__answer" v-if="task3Answer">-->
-<!--              Ответ: {{ task3Answer }}-->
-<!--            </span>-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </form>-->
-<!--    </div>-->
+    <div class="task">
+      <h3 class="task__header">Задание 3</h3>
+      <p class="task__content">
+        Простейшая дифракционная решетка, представляющая собой поглощающий экран с периодически расположенными (шаг Λ)
+        прозрачными щелями шириной D, освещается нормально падающей плоской монохроматической волной
+        (длина волны излучения <img class="task__formula" src="https://chart.googleapis.com/chart?cht=tx&amp;chl=\lambda">).
+        Во сколько раз различаются интенсивности света, дифрагируемого решеткой в главные максимумы с номерами M<sub>1</sub> и M<sub>2</sub>?<br>
+        <strong>Мы так и не поняли, как решать это задание, но условие у всех одинаковое (M<sub>1</sub> = 8; M<sub>2</sub> = -7)</strong>
+      </p>
+      <form class="task__form">
+        <ul class="input__list">
+          <li class="input__item">
+            <span class="task__answer">
+              Ответ: 3.
+            </span>
+          </li>
+        </ul>
+      </form>
+    </div>
     <div class="task">
       <h3 class="task__header">Задание 4</h3>
       <p class="task__content">
