@@ -21,6 +21,11 @@
       </router-link>
     </li>
     <li class="nav__item">
+      <router-link :to="{ name: 'Week5' }" :active-class="'nav__link--active'" class="nav__link">
+        Промежуточная аттестация
+      </router-link>
+    </li>
+    <li class="nav__item">
       <router-link :to="{ name: 'Week6' }" :active-class="'nav__link--active'" class="nav__link">
         Неделя 6
       </router-link>
@@ -28,6 +33,21 @@
     <li class="nav__item">
       <router-link :to="{ name: 'Week7' }" :active-class="'nav__link--active'" class="nav__link">
         Неделя 7
+      </router-link>
+    </li>
+    <li class="nav__item">
+      <router-link :to="{ name: 'Week8' }" :active-class="'nav__link--active'" class="nav__link">
+        Неделя 8
+      </router-link>
+    </li>
+    <li class="nav__item">
+      <router-link :to="{ name: 'Week9' }" :active-class="'nav__link--active'" class="nav__link">
+        Неделя 9
+      </router-link>
+    </li>
+    <li class="nav__item">
+      <router-link :to="{ name: 'Week10' }" :active-class="'nav__link--active'" class="nav__link">
+        Экзамен
       </router-link>
     </li>
     <li class="nav__item">
